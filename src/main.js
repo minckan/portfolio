@@ -8,6 +8,8 @@ import { addComma } from '@/utils/formatter'
 import VueMoment from 'vue-moment'
 import moment from 'moment'
 
+
+
 Vue.config.productionTip = false
 Vue.prototype.addComma = addComma
 Vue.config.devtools = true

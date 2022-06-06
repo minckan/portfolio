@@ -2,7 +2,7 @@
 const port = 9529
 
 module.exports = {
-  publicPath: '/test/min/',
+  publicPath: '/',
   outputDir: process.env.ENV === 'staging' ? 'dist_stag' : 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
@@ -26,7 +26,7 @@ module.exports = {
   },
   configureWebpack: {
     // webpackConfig.name
-    name: 'K-POP Chart',
+    name: '프론트엔드 웹&앱 개발자: 강민주',
     // 성능 힌트 OFF(폰트를 넣으면 용량이 늘어나고, 용량 경고가 출력된다!)
     performance: {
       hints: false

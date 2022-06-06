@@ -1,47 +1,9 @@
 // font
-@font-face {
-	font-family: NotoSans-Regular;
-	// 해당하는 포멧 설정 찾아서 세팅
-	src: url('~@/assets/font/NotoSans-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-  }
-@font-face {
-	font-family: NotoSans-Bold;
-	// 해당하는 포멧 설정 찾아서 세팅
-	src: url('~@/assets/font/NotoSansKR-Bold.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-  }
-
-@font-face {
-font-family: Roboto-Regular;
-// 해당하는 포멧 설정 찾아서 세팅
-src: url('~@/assets/font/Roboto-Regular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: Roboto-Bold;
-// 해당하는 포멧 설정 찾아서 세팅
-src: url('~@/assets/font/Roboto-Bold.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: Roboto-Italic;
-// 해당하는 포멧 설정 찾아서 세팅
-src: url('~@/assets/font/Roboto-MediumItalic.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
 
 html {
 	*{
 		outline: none;
 		font-size: 16px;
-		font-family:  NotoSans-Regular;
 	}
 	scroll-behavior: smooth;
 }
@@ -66,6 +28,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	
 
 }
 /* HTML5 display-role reset for older browsers */
@@ -75,6 +38,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
