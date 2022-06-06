@@ -2,7 +2,7 @@
 const port = 9529
 
 module.exports = {
-  publicPath: '/resume',
+  publicPath: '/',
   outputDir: process.env.ENV === 'staging' ? 'dist_stag' : 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
