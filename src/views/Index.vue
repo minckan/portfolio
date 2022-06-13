@@ -72,7 +72,10 @@
               <p class="app-intro">벨기에 소재 푸드코트 쿠폰앱</p>
               <p class="sub-title">담당 작업</p>
               <hr>
-              <p class="functions">전체 화면 개발 : UI개발, API 연동, 스탬프 SDK 연동 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+              <p class="functions">1. 전체 화면 개발 : UI개발, API 연동, 스탬프 SDK 연동 
+                <br>2. 안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인 등
+                <br>3. 앱 런칭 및 유지보수
+              </p>
               <p class="sub-title">사용기술</p>
               <hr>
               <p class="functions">vue.js / ionic / android(java) / iOS(swift) / AWS / Firebase</p>
@@ -113,10 +116,13 @@
                 <p class="app-intro">미스터 피자 리뉴얼 버전 앱과 웹</p>
                 <p class="sub-title">담당 작업</p>
                 <hr>
-                <p class="functions">화면 개발 : 전체 UI개발, API 연동, 결제, <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+                <p class="functions">1. 화면 개발 : 전체 UI개발, API 연동, 결제모듈 연동
+                  <br>2. 안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인
+                  <br>3. 앱 런칭
+                </p>
                 <p class="sub-title">사용기술</p>
                 <hr>
-                <p class="functions">vue.js / android(java) / iOS(swift) / AWS / Firebase / nicepay</p>
+                <p class="functions">vue.js / android(java) / iOS(swift) / AWS / Firebase</p>
               </div>
 
             </section>
@@ -149,10 +155,10 @@
                 <p class="app-intro">클라우드펀딩 기반 엔터테인먼트 콘텐츠 플랫폼</p>
                 <p class="sub-title">담당 작업</p>
                 <hr>
-                <p class="functions">화면 개발 : UI개발, API 연동, 다국어적용</p>
+                <p class="functions">1. 화면 개발 : UI개발, API 연동, 다국어적용</p>
                 <p class="sub-title">사용기술</p>
                 <hr>
-                <p class="functions">nuxt.js / i18n</p>
+                <p class="functions">nuxt.js</p>
                 
                 <div  class="link">
                   <a href="https://www.makestarcorp.com/">메이크스타 둘러보기</a>
@@ -187,10 +193,13 @@
                 <p class="app-intro">외국인을 대상으로 한 대구 관광 쇼핑 앱</p>
                 <p class="sub-title">담당 작업</p>
                 <hr>
-                <p class="functions">화면 개발 : UI개발, API 연동, 결제, 다국어 적용, 소셜로그인 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+                <p class="functions">1. 화면 개발 : UI개발, API 연동, 결제모듈 연동, 다국어 적용, 소셜로그인 
+                  <br>2. 안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인
+                  <br>3. 앱 런칭 
+                </p>
                 <p class="sub-title">사용기술</p>
                 <hr>
-                <p class="functions">vue.js/ ionic / android(java) / iOS(swift) / AWS / Firebase / nicepay / i18n</p>
+                <p class="functions">vue.js/ ionic / android(java) / iOS(swift) / AWS / Firebase</p>
               </div>
             </section>
             <p class="pcVer">PC Ver.</p>
