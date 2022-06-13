@@ -46,110 +46,157 @@
           <dl class="project_list_wrap">
             <dt><input v-model="selected" type="radio" name="radio" value="0" id="stampit" checked><label for="stampit">Stampit</label></dt>
             <dt><input v-model="selected" type="radio" name="radio" value="1" id="mp"><label for="mp">미스터피자</label></dt>
-            <dt><input v-model="selected" type="radio" name="radio" value="2" id="makestar"><label for="makestar">MakeStar</label></dt>
             <dt><input v-model="selected" type="radio" name="radio" value="3" id="dds"><label for="dds">DDS</label></dt>
+            <dt><input v-model="selected" type="radio" name="radio" value="2" id="makestar"><label for="makestar">MakeStar</label></dt>
             <!-- <dt><input v-model="selected" type="radio" name="radio" value="4" id="shrimp"><label for="shrimp">ShrimpPic</label></dt> -->
           </dl>
           <!-- STAMPIT -->
-          <div v-if="selected === '0'" class="contents stampit">
-            <img class="logo" src="@/assets/images/symbol_manager.png" alt="">
-            <dl class="platform-list">
-              <dt>Android</dt>
-              <dt>iOS</dt>
-            </dl>
-            <p class="app-intro">벨기에 소재 푸드코트 쿠폰앱</p>
-             <p class="sub-title">담당 작업</p>
-            <hr>
-            <p class="functions">전체 화면 개발 : UI개발, API 연동, 스탬프 SDK 연동 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
-            <p class="sub-title">사용기술</p>
-            <hr>
-            <p class="functions">vue.js / ionic / android(java) / iOS(swift) / AWS / Firebase</p>
-
-            <div class="video_view">
-              <video controls width="250" poster="@/assets/images/stampit.png">
-                <source src="@/assets/Stampit_record.mp4"
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-              </video>
+          <div v-if="selected === '0'" class="contents stampit two_wrapper">
+            <div class="left_contents">
+             <div class="video_view_wrapper">
+                <div class="video_view">
+                <video controls width="100%" height="100%" poster="@/assets/images/stampit.png">
+                  <source src="@/assets/Stampit_record.mp4"
+                          type="video/mp4">
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+             </div>
             </div>
+            <div class="right_contents">
+              <img class="logo" src="@/assets/images/symbol_manager.png" alt="">
+              <dl class="platform-list">
+                <dt>Android</dt>
+                <dt>iOS</dt>
+              </dl>
+              <p class="app-intro">벨기에 소재 푸드코트 쿠폰앱</p>
+              <p class="sub-title">담당 작업</p>
+              <hr>
+              <p class="functions">전체 화면 개발 : UI개발, API 연동, 스탬프 SDK 연동 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+              <p class="sub-title">사용기술</p>
+              <hr>
+              <p class="functions">vue.js / ionic / android(java) / iOS(swift) / AWS / Firebase</p>
 
-            <div class="download_btn">
-              <img src="@/assets/images/btn_google_play.png" alt="goole paly store" @click="openUrl('https://play.google.com/store/apps/details?id=com.stampit.app')">
-              <img src="@/assets/images/btn_app_store.png" alt="apple store" @click="openUrl('https://apps.apple.com/us/app/stampit-by-plusdeals/id1619061573')">
+              
+
+              <div class="download_btn">
+                <img src="@/assets/images/btn_google_play.png" alt="goole paly store" @click="openUrl('https://play.google.com/store/apps/details?id=com.stampit.app')">
+                <img src="@/assets/images/btn_app_store.png" alt="apple store" @click="openUrl('https://apps.apple.com/us/app/stampit-by-plusdeals/id1619061573')">
+              </div>
             </div>
+            
 
           </div>
 
           <!-- Mr Pizza -->
-          <div v-if="selected === '1'" class="contents mrpizza">
-            <img class="logo" src="@/assets/images/mp-logo.png" alt="">
-            <dl class="platform-list">
-              <dt>Android</dt>
-              <dt>iOS</dt>
-              <dt>Mobile-Web</dt>
-              <dt>PC-Web</dt>
-            </dl>
-            <p class="app-intro">미스터 피자 리뉴얼 버전 앱과 웹</p>
-             <p class="sub-title">담당 작업</p>
-            <hr>
-            <p class="functions">화면 개발 : 전체 UI개발, API 연동, 결제, <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
-            <p class="sub-title">사용기술</p>
-            <hr>
-            <p class="functions">vue.js / android(java) / iOS(swift) / AWS / Firebase / nicepay</p>
-            <img class="screenshots" src="@/assets/images/mp_pc_screenshot.png" alt="">
+          <div v-if="selected === '1'" class="contents mrpizza ">
+            <section class="two_wrapper">
+              <div class="left_contents">
+                <div class="video_view_wrapper">
+                  <div class="video_view">
+                    <video controls width="100%" height="100%" poster="@/assets/images/mrpizza.png">
+                      <source src="@/assets/MP_record.mp4"
+                              type="video/mp4">
+                      Sorry, your browser doesn't support embedded videos.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="right_contents">
+                <img class="logo" src="@/assets/images/mp-logo.png" alt="">
+                <dl class="platform-list">
+                  <dt>Android</dt>
+                  <dt>iOS</dt>
+                  <dt>Mobile-Web</dt>
+                  <dt>PC-Web</dt>
+                </dl>
+                <p class="app-intro">미스터 피자 리뉴얼 버전 앱과 웹</p>
+                <p class="sub-title">담당 작업</p>
+                <hr>
+                <p class="functions">화면 개발 : 전체 UI개발, API 연동, 결제, <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+                <p class="sub-title">사용기술</p>
+                <hr>
+                <p class="functions">vue.js / android(java) / iOS(swift) / AWS / Firebase / nicepay</p>
+              </div>
 
-            <div class="video_view">
-              <video controls width="250" poster="@/assets/images/mrpizza.png">
-                <source src="@/assets/MP_record.mp4"
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
-            출시예정
+            </section>
+            <p class="pcVer">PC Ver.</p>
+            <img class="screenshots" src="@/assets/images/mp_pc_screenshot.png" alt="">
+            <p class="aboutToPublish">출시예정</p>
           </div>
+
+
           <!-- 메이크스타 -->
           <div v-if="selected === '2'" class="contents makestar">
-                       <img class="logo" src="@/assets/images/makestar-logo.svg" alt="">
-            <dl class="platform-list">
-              <dt>Mobile-Web</dt>
-              <dt>PC-Web</dt>
-            </dl>
-            <p class="app-intro">클라우드펀딩 기반 엔터테인먼트 콘텐츠 플랫폼</p>
-             <p class="sub-title">담당 작업</p>
-            <hr>
-            <p class="functions">화면 개발 : UI개발, API 연동, 다국어적용</p>
-            <p class="sub-title">사용기술</p>
-            <hr>
-            <p class="functions">nuxt.js / i18n</p>
-            <img class="screenshots" src="@/assets/images/makestar_pc_screenshot.png" alt="">
-            <a href="https://www.makestarcorp.com/">메이크스타 홈페이지</a>
+            <section class="two_wrapper">
+              <div class="left_contents">
+                <div class="video_view_wrapper">
+                  <div class="video_view">
+                    <video controls width="100%" height="100%" poster="@/assets/images/makestar_thumbnail.jpeg">
+                      <source src="@/assets/Makestar_record.mp4"
+                              type="video/mp4">
+                      Sorry, your browser doesn't support embedded videos.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="right_contents">
+                <img class="logo" src="@/assets/images/makestar-logo.svg" alt="">
+                <dl class="platform-list">
+                  <dt>Mobile-Web</dt>
+                  <dt>PC-Web</dt>
+                </dl>
+                <p class="app-intro">클라우드펀딩 기반 엔터테인먼트 콘텐츠 플랫폼</p>
+                <p class="sub-title">담당 작업</p>
+                <hr>
+                <p class="functions">화면 개발 : UI개발, API 연동, 다국어적용</p>
+                <p class="sub-title">사용기술</p>
+                <hr>
+                <p class="functions">nuxt.js / i18n</p>
+                
+                <div  class="link">
+                  <a href="https://www.makestarcorp.com/">메이크스타 둘러보기</a>
+                </div>
+              </div>
+            </section>
+            <!-- <img class="screenshots" src="@/assets/images/makestar_pc_screenshot.png" alt=""> -->
+           
           </div>
                   <!-- dds -->
           <div v-if="selected === '3'" class="contents dds">
-            <img class="logo" src="@/assets/images/dds-logo.png" alt="">
-            <dl class="platform-list">
-              <dt>Android</dt>
-              <dt>iOS</dt>
-              <dt>Mobile-Web</dt>
-              <dt>PC-Web</dt>
-            </dl>
-            <p class="app-intro">외국인을 대상으로 한 대구 관광 쇼핑 앱</p>
-             <p class="sub-title">담당 작업</p>
-            <hr>
-            <p class="functions">화면 개발 : UI개발, API 연동, 결제, 다국어 적용, 소셜로그인 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
-            <p class="sub-title">사용기술</p>
-            <hr>
-            <p class="functions">vue.js/ ionic / android(java) / iOS(swift) / AWS / Firebase / nicepay / i18n</p>
+            <section class="two_wrapper">
+               <div class="left_contents">
+                <div class="video_view_wrapper">
+                  <div class="video_view">
+                    <video controls width="250" poster="@/assets/images/dds.png">
+                      <source src="@/assets/DDS_record.mp4"
+                              type="video/mp4">
+                      Sorry, your browser doesn't support embedded videos.
+                    </video>
+                  </div>
+                </div>
+               </div>
+              <div class="right_contents">
+                <img class="logo" src="@/assets/images/dds-logo.png" alt="">
+                <dl class="platform-list">
+                  <dt>Android</dt>
+                  <dt>iOS</dt>
+                  <dt>Mobile-Web</dt>
+                  <dt>PC-Web</dt>
+                </dl>
+                <p class="app-intro">외국인을 대상으로 한 대구 관광 쇼핑 앱</p>
+                <p class="sub-title">담당 작업</p>
+                <hr>
+                <p class="functions">화면 개발 : UI개발, API 연동, 결제, 다국어 적용, 소셜로그인 <br>안드로이드&middot;iOS개발 : FCM, APNs, 소셜로그인</p>
+                <p class="sub-title">사용기술</p>
+                <hr>
+                <p class="functions">vue.js/ ionic / android(java) / iOS(swift) / AWS / Firebase / nicepay / i18n</p>
+              </div>
+            </section>
+            <p class="pcVer">PC Ver.</p>
             <img class="screenshots" src="@/assets/images/dds_pc_screenshot.png" alt="">
-
-            <div class="video_view">
-              <video controls width="250" poster="@/assets/images/dds.png">
-                <source src="@/assets/DDS_record.mp4"
-                        type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-            </div>
-            출시예정
+            <p class="aboutToPublish">출시예정</p>
+            
           </div>
          </div>
   
@@ -178,6 +225,10 @@
     <!-- <div v-if="isScrollDown" class="move-top-btn" @click="onMoveToTop()">
       <p>TOP</p>
     </div> -->
+
+    <div class="footer">
+      <p>ⓒ 2022. minckan all rights reserved.</p>
+    </div>
 
   </div>
 </template>
@@ -432,13 +483,13 @@ export default {
               margin-top: 20px;
             }
             .sub-title {
-              font-size: 20px; color: gray; margin-top: 50px;
+              font-size: 16px; color: gray; margin-top: 50px; 
             }
             hr {
-              width: 30px; margin: 20px 0;
+              width: 20px; margin: 20px 0; 
             }
             .functions {
-              text-align: center;
+              text-align: center; font-size: 20px;
             }
             .download_btn {
              display: flex; justify-content: center; margin-top: 50px;
@@ -453,7 +504,49 @@ export default {
               display: flex; justify-content: center; margin-top: 50px;
             }
             .screenshots {
-              width: 700px; margin-top: 50px;
+              width: 700px; margin-bottom: 50px;
+            }
+            .aboutToPublish {
+               font-size: 16px; color: gray;
+            }
+          }
+          .link {
+            margin-top: 30px;
+          }
+          .pcVer {
+            margin-top: -90px; margin-bottom: 20px; font-size: 16px;
+          }
+        
+          .two_wrapper {
+            flex-direction: row; display: flex; width: 1190px; padding-bottom: 0;
+            height: max-content; align-items: flex-start; padding-top: 0;
+            .left_contents {
+              width: max-content;  padding-left: 130px;
+              .video_view_wrapper {
+                width: 300px; position: relative; height: 650px; 
+                background-image: url('~@/assets/images/phone.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%; margin-right:60px ; 
+                .video_view { 
+                  margin: 0; width: 260px; position: absolute; left: 50%; transform: translateX(-50%);
+                  top: 90px; overflow: hidden; height: 470px;
+
+                  video[poster]{
+                  height:100%;
+                  width:100%;
+                  object-fit: fill;
+                  }
+                }
+              }
+            }
+            .right_contents {
+              flex: 1;
+              .functions {
+                text-align: left;
+              }
+              .download_btn {
+                justify-content: flex-start;
+              }
             }
           }
           .stampit {
@@ -504,6 +597,15 @@ export default {
         &:nth-child(3) {}
 
       }
+    }
+  }
+
+  .footer {
+    width: 100%; height: 100px; background: #EEEEEE;
+    display: flex; align-items: center;
+    p {
+      width: 1190px; margin:  0 auto; font-size: 16px; color: gray;
+      text-align: center;
     }
   }
   .move-top-btn{
