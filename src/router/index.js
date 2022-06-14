@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: '', component: () => import('@/views/Index') },
+  { path: '/:idx', name: 'page', component: () => import('@/views/Index') },
 ]
 
 const router = new VueRouter({

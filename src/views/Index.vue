@@ -44,10 +44,10 @@
          <div>
           <p class="title">Experiences</p>
           <dl class="project_list_wrap">
-            <dt><input v-model="selected" type="radio" name="radio" value="0" id="stampit" checked><label for="stampit">Stampit</label></dt>
-            <dt><input v-model="selected" type="radio" name="radio" value="1" id="mp"><label for="mp">미스터피자</label></dt>
-            <dt><input v-model="selected" type="radio" name="radio" value="3" id="dds"><label for="dds">DDS</label></dt>
-            <dt><input v-model="selected" type="radio" name="radio" value="2" id="makestar"><label for="makestar">MakeStar</label></dt>
+            <dt @click="$router.push({name: 'page', params: {idx: '0'}})"><input v-model="selected" type="radio" name="radio" value="0" id="stampit" :checked="selected === '0'"><label for="stampit">Stampit</label></dt>
+            <dt @click="$router.push({name: 'page', params: {idx: '1'}})"><input v-model="selected" type="radio" name="radio" value="1" id="mp" :checked="selected === '1'"><label for="mp">미스터피자</label></dt>
+            <dt @click="$router.push({name: 'page', params: {idx: '3'}})"><input v-model="selected" type="radio" name="radio" value="3" id="dds" :checked="selected === '3'"><label for="dds">DDS</label></dt>
+            <dt @click="$router.push({name: 'page', params: {idx: '2'}})"><input v-model="selected" type="radio" name="radio" value="2" id="makestar" :checked="selected === '2'"><label for="makestar">MakeStar</label></dt>
             <!-- <dt><input v-model="selected" type="radio" name="radio" value="4" id="shrimp"><label for="shrimp">ShrimpPic</label></dt> -->
           </dl>
           <!-- STAMPIT -->
@@ -258,7 +258,7 @@ export default {
     return {
       defaultOptions: { animationData: animationData },
      isScrollDown: false,
-     selected: '0'
+     selected: this.$route.params.idx || '0'
     }
   },
    computed: {
